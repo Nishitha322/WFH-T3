@@ -1,0 +1,601 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:white;
+    padding:20px;
+}
+
+section{
+    margin-bottom:50px;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#333;
+}
+
+/* Responsive Heading */
+
+.heading-section{
+    text-align:center;
+}
+
+.main-heading{
+    font-size:48px;
+    color:navy;
+}
+
+
+.background-box{
+    background:lightblue;
+    padding:40px;
+    text-align:center;
+    border-radius:10px;
+}
+
+/* Responsive Paragraph */
+
+.responsive-paragraph{
+    width:70%;
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* Responsive Boxes */
+
+.boxes{
+    display:flex;
+    gap:20px;
+}
+
+.box{
+    flex:1;
+    background:tomato;
+    color:white;
+    padding:40px;
+    text-align:center;
+    border-radius:10px;
+    font-size:20px;
+}
+
+.image-section{
+    text-align:center;
+}
+
+.responsive-image{
+    width:500px;
+    max-width:100%;
+    border-radius:10px;
+}
+
+@media(max-width:992px){
+
+.main-heading{
+    font-size:36px;
+}
+
+.background-box{
+    background:lightgreen;
+}
+
+.responsive-paragraph{
+    width:90%;
+}
+
+}
+
+@media(max-width:768px){
+
+.main-heading{
+    font-size:24px;
+}
+
+.background-box{
+    background:lightgray;
+}
+
+.responsive-paragraph{
+    width:100%;
+}
+
+.boxes{
+    flex-direction:column;
+}
+
+.responsive-image{
+    display:none;
+}
+
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#333;
+    padding:15px 30px;
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.nav-links li a{
+    color:white;
+    text-decoration:none;
+}
+
+.menu-navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#444;
+    padding:15px 30px;
+}
+
+.menu-links{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.menu-links li a{
+    color:white;
+    text-decoration:none;
+}
+
+.menu-btn{
+    display:none;
+    padding:10px 20px;
+    background:orange;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.logo-section{
+    text-align:center;
+}
+
+.website-logo{
+    width:250px;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0d6efd;
+    color:white;
+    padding:20px;
+}
+
+.header-nav{
+    display:flex;
+    gap:20px;
+}
+
+.header-nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.card{
+    border:1px solid #ccc;
+    border-radius:10px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+@media(max-width:992px){
+
+    .website-logo{
+        width:180px;
+    }
+
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        margin-top:15px;
+    }
+
+    .menu-links{
+        display:none;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .website-logo{
+        width:120px;
+    }
+
+    .header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .header-nav{
+        flex-direction:column;
+        margin-top:15px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+}
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+}
+
+.dashboard{
+    display:flex;
+    gap:20px;
+}
+
+.sidebar{
+    width:250px;
+    background:#333;
+    color:white;
+    padding:20px;
+}
+
+.sidebar ul{
+    list-style:none;
+    margin-top:20px;
+}
+
+.sidebar ul li{
+    margin-bottom:15px;
+}
+
+.main-content{
+    flex:1;
+    background:#f4f4f4;
+    padding:20px;
+}
+
+.pricing{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.plan{
+    border:1px solid #ccc;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.plan button{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    background:#0d6efd;
+    color:white;
+    cursor:pointer;
+}
+
+.typography-section{
+    text-align:center;
+}
+
+.responsive-title{
+    font-size:42px;
+}
+
+.responsive-text{
+    font-size:18px;
+    line-height:1.6;
+}
+
+.button-section{
+    text-align:center;
+}
+
+.responsive-button{
+    width:200px;
+    height:60px;
+    background:#28a745;
+    color:white;
+    border:none;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.login-form{
+    width:400px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.login-form input{
+    padding:12px;
+}
+
+.login-form button{
+    padding:12px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+}
+
+.footer{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    background:#222;
+    color:white;
+    padding:30px;
+}
+
+.profile-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    border:1px solid #ccc;
+    padding:20px;
+    border-radius:10px;
+}
+
+.profile-card img{
+    width:180px;
+    border-radius:50%;
+}
+
+.student-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.student-table th,
+.student-table td{
+    border:1px solid #ccc;
+    padding:12px;
+    text-align:center;
+}
+
+.college-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0d6efd;
+    color:white;
+    padding:20px;
+}
+
+.college-header nav{
+    display:flex;
+    gap:20px;
+}
+
+.college-header nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    text-align:center;
+    background:#e9ecef;
+    padding:80px 20px;
+}
+
+.about,
+.contact,
+.testimonials{
+    padding:40px 20px;
+}
+
+.course-list,
+.faculty-list{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding:20px;
+}
+
+.course,
+.faculty-card{
+    background:#f5f5f5;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.contact form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact input,
+.contact textarea{
+    padding:12px;
+}
+
+.contact button{
+    padding:12px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+}
+
+.college-footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:992px){
+
+.gallery{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.pricing{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.footer{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.login-form{
+    width:300px;
+}
+
+.course-list,
+.faculty-list{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.responsive-title{
+    font-size:34px;
+}
+
+.responsive-text{
+    font-size:17px;
+}
+
+}
+
+@media(max-width:768px){
+
+.gallery{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.dashboard{
+    flex-direction:column;
+}
+
+.sidebar{
+    width:100%;
+}
+
+.pricing{
+    grid-template-columns:1fr;
+}
+
+.responsive-title{
+    font-size:26px;
+}
+
+.responsive-text{
+    font-size:16px;
+    line-height:2;
+}
+
+.responsive-button{
+    width:100%;
+    height:50px;
+}
+
+.login-form{
+    width:95%;
+}
+
+.footer{
+    grid-template-columns:1fr;
+}
+
+.profile-card{
+    flex-direction:column;
+    text-align:center;
+}
+
+.student-table,
+.student-table thead,
+.student-table tbody,
+.student-table tr,
+.student-table th,
+.student-table td{
+    display:block;
+    width:100%;
+}
+
+.student-table tr{
+    margin-bottom:20px;
+}
+
+.student-table th{
+    display:none;
+}
+
+.student-table td{
+    text-align:left;
+}
+
+.college-header{
+    flex-direction:column;
+    text-align:center;
+}
+
+.college-header nav{
+    flex-direction:column;
+    margin-top:15px;
+}
+
+.course-list,
+.faculty-list{
+    grid-template-columns:1fr;
+}
+
+}
